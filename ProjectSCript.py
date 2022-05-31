@@ -19,8 +19,10 @@ if start == 1:
     userNam = str(f" url:{url} \n username: {userName}\n password: {passWord}")    
     PassWordFile.write(userNam)
 else:
+    #preview this pw
     preview = input("Enter the url of the pass word")
     with open(rf"E:\Marwan\PROGRAMMING\py projects\Password maneger\{preview}.txt", "r") as file:
+        #preview it
         PassWordFil = file.read()
         if preview in PassWordFil:
             print( PassWordFil)
